@@ -7,6 +7,7 @@ Site may have bugs, not something ground braking but probably some minor things.
 Please consider. You can also contribute to it. https://patreon.com/fastani
 Checkout my new project (https://fastani.net)
 100+ Shows that are working.
+Images: https://imgur.com/a/LLwBl1Q#WPrvYDa
 Features:
 - Email Verification
 - Admin Panel
