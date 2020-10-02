@@ -1,5 +1,5 @@
 # AnimeMoon
-This is a site made back in 2019. It is a streaming site that uses kitsuapi 
+This is a site made back in 2019 till 2020. It is a streaming site that uses kitsuapi 
 ONLY FOR ANIME, not made for Movies or TV Shows (altrough you can make your own api that uses tv shows with would work).
 
 It's quite easy to configure. You have to upload db.sql to your phpmyadmin and configure password in config.php and /admin/apiconfig.php . If you have any question join my discord. https://discord.gg/79fVK2T
