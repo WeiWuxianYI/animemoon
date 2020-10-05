@@ -1,0 +1,1048 @@
+=transition($prop)
+  -webkit-transition: $prop
+  -moz-transition: $prop
+  -o-transition: $prop
+  transition: $prop
+=shadow($prop)
+  -webkit-box-shadow: $prop
+  -moz-box-shadow: $prop
+  box-shadow: $prop
+.sidebar-new
+  position: fixed
+  height: 100%
+  background: rgb(21, 21, 21)
+  width: 100px
+  z-index: 999999999
+  top: 0
+  bottom: 0
+  left: 0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-direction: column
+  flex-wrap: nowrap
+  overflow: auto
+  padding: 34px 23px
+  .sidebar-new-button
+    color: #8E949A
+    font-size: 26px
+    cursor: pointer
+    background: transparent
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 10px
+    border-radius: 10px
+    +transition(.2s)
+    width: 52px
+    height: 52px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    flex-wrap: wrap
+    margin-bottom: 10px
+    &:hover
+      background: #34373A
+    &.active
+      color: #03A9F4
+      cursor: default!important
+    &.active:hover
+      background: rgba(3, 169, 244, 0.09)
+  .sidebar-new-delimiter
+    width: 100%
+    margin-bottom: 10px
+    height: 1px
+    background: #8E949A
+    opacity: 0.25
+body
+  padding-left: 100px!important
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  background: rgb(24, 24, 24)!important
+  position: relative
+.anime-page-new
+  position: relative
+  .anime-info-new
+    color: #A7A7A7
+    text-align: left
+    display: block
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 80px 55px 0 55px
+    -webkit-transition: 0.3s
+    -moz-transition: 0.3s
+    -o-transition: 0.3s
+    transition: 0.3s
+    .anime-title-new
+      font-size: 50px
+      font-weight: 500
+      color: #ffffff
+    .anime-tags-new
+      font-size: 16px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      flex-direction: row
+      flex-wrap: wrap
+      margin-top: 10px
+      .anime-tag-new
+        background: #323335
+        color: #a7a7a7!important
+        margin-right: 10px
+        margin-bottom: 10px
+        padding: 10px
+        border-radius: 5px
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        text-decoration: none
+        cursor: pointer
+        +transition(.3s)
+        &:hover
+          background: #03A9F4
+          color: #ffffff!important
+    .anime-description-new
+      max-width: 920px
+      width: 100%
+      margin-top: 40px
+      font-size: 20px
+    .anime-sub-info-new
+      color: #ffffff
+      margin-top: 25px
+      .anime-sub-element-new
+        font-size: 18px
+        margin: 8px 0 0 0
+        color: #ffffff
+        span
+          color: #03A9F4
+          margin-left: 5px
+        .ase-new-icon
+          margin-right: 10px
+.anime-page-background
+  width: 100%
+  height: 100%
+  background: center/cover no-repeat
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  z-index: -1
+  .anime-page-background-overlay
+    width: 100%
+    height: 100%
+    background: rgba(33, 33, 33, 0.95)
+.anime-episodes-title-new
+  color: #ffffff
+  font-size: 40px
+  text-align: left
+  padding: 50px 55px 50px 55px
+
+
+.anime-paginator-new
+  color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: 5px 55px 20px 55px
+  flex-wrap: wrap
+.anime-page-button-new
+  margin: 8px
+  padding: 10px 20px
+  background: #0D0D0D
+  border-radius: 6px
+  cursor: pointer
+  -webkit-transition: .3s
+  -moz-transition: .3s
+  -o-transition: .3s
+  transition: .3s
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.anime-page-button-new:hover
+  background: #272727
+.anime-page-button-new.active
+  background: #03A9F4
+  color: #ffffff
+  cursor: default
+.anime-episodes-new
+  margin: auto
+  display: flex
+  color: #ffffff
+  justify-content: center
+  text-align: center
+  padding: 10px 55px
+  flex-wrap: wrap
+  +transition(.2s)
+.anime-episode-new
+  background: #0D0D0D
+  position: relative
+  margin: 10px
+  border-radius: 10px
+  width: 240px
+  height: 140px
+.anime-episode-link-new
+  width: 100%
+  height: 100%
+  color: #ffffff!important
+  cursor: pointer
+  text-decoration: none!important
+  &:hover
+    .anime-ep-icn-new
+      opacity: 1
+    .anime-ep-no-new
+      opacity: 0
+.anime-ep-cent-new
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+.anime-ep-no-new
+  padding: 15px
+  position: relative
+  font-size: 30px
+  text-align: center
+  font-weight: 300
+  opacity: 1
+  -webkit-transition: .2s
+  -moz-transition: .2s
+  -o-transition: .2s
+  transition: .2s
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.anime-ep-icn-new
+  opacity: 0
+  font-size: 30px
+  position: absolute
+  -webkit-transition: .7s
+  -moz-transition: .3s
+  -o-transition: .3s
+  transition: .3s
+  color: #03A9F4
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.movie-box-new
+  background: none
+  width: 200px
+  height: 325px
+  margin: 25px 20px 25px 20px
+  position: relative
+  -webkit-transition: 0.3s
+  -moz-transition: 0.3s
+  -o-transition: 0.3s
+  transition: 0.3s
+  overflow: hidden
+  &.mbn-home
+    display: inline-block
+  .movie-cover-new
+    background: no-repeat center/cover
+    width: 100%
+    height: 275px
+    border-radius: 10px
+    cursor: pointer
+    position: relative
+    overflow: hidden
+    .movie-cover-overlay-new
+      position: absolute
+      opacity: 0
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background: #000000
+      +transition(.2s)
+  .movie-name-new
+    font-size: 14px
+    color: #ffffff
+    font-weight: 400
+    overflow: hidden
+    white-space: nowrap
+    cursor: pointer
+    position: relative
+    height: 26px
+    margin-top: 12px
+    +transition(.2s)
+    span
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      text-align: center
+      +transition(1.6s)
+  .movie-trans
+    position: absolute
+    left: 0
+    top: 10px
+    color: white
+    background: #2b2d30
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 5px 10px
+    border-radius: 0 5px 5px 0
+    font-size: 14px
+    -webkit-box-shadow: 0px 0px 22px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 0px 22px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 0px 22px -5px rgba(0,0,0,0.75)
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+  .movie-episodes-no
+    font-size: 14px
+    color: #c7c7c7
+    font-weight: 400
+    overflow: hidden
+    white-space: nowrap
+    cursor: pointer
+    position: relative
+    height: 26px
+    margin-top: -8px
+    +transition(.2s)
+    text-align: center
+  &:hover
+    -webkit-transform: scale(1.05)
+    -moz-transform: scale(1.05)
+    -ms-transform: scale(1.05)
+    -o-transform: scale(1.05)
+    transform: scale(1.05)
+.homepage-image
+  width: 100%
+  display: block
+  -webkit-box-shadow: 0 23px 110px -9px rgba(0,0,0,0.42)
+  -moz-box-shadow: 0 23px 110px -9px rgba(0,0,0,0.42)
+  box-shadow: 0 23px 110px -9px rgba(0,0,0,0.42)
+.watch-data
+  background: #181818
+  width: 100%
+  padding: 30px 150px 30px 40px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  position: relative
+  .wdt-title
+    color: white
+    font-size: 18px
+    white-space: nowrap
+    overflow: hidden
+    -ms-text-overflow: ellipsis
+    text-overflow: ellipsis
+    max-width: 500px
+  .wdt-media
+    color: #969696
+    font-size: 13px
+    text-transform: uppercase
+    font-weight: bold
+    margin: 10px 0
+  .wdt-desc
+    color: #606060
+    margin-top: 15px
+    font-size: 16px
+  .wdt-like-btns
+    position: absolute
+    right: 30px
+    top: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    flex-wrap: nowrap
+    width: 96px
+    .wdt-like-button
+      background: white
+      width: 40px
+      height: 40px
+      position: relative
+      border-radius: 100%
+      margin: 8px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      color: #606060
+      cursor: pointer
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+      &:hover
+        background: #2c2c2c
+        color: white
+  .wdt-buttons
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    margin: 10px 0
+    .wdt-button
+      background: white
+      padding: 6px 25px
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      border-radius: 4px
+      margin: 6px
+      cursor: pointer
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      color: #606060
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+      &:hover
+        background: #2c2c2c
+        color: white
+#searchBar
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  z-index: 999999999
+  justify-content: flex-start
+  padding: 80px 20px 20px 20px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  align-items: center
+  flex-wrap: nowrap
+  flex-direction: column
+  background: rgba(0,0,0,0.6)
+  opacity: 0
+  -webkit-transition: 0.5s
+  -moz-transition: 0.5s
+  -o-transition: 0.5s
+  transition: 0.5s
+  pointer-events: none
+  .ovr
+    background: transparent
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+  .searchBarG
+    position: relative
+    max-width: 1100px
+    width: 100%
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    height: 65px
+    background: #181818
+    padding: 20px 20px 20px 65px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 10px
+    -webkit-box-shadow: 0 0 42px 10px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0 0 42px 10px rgba(0,0,0,0.75)
+    box-shadow: 0 0 42px 10px rgba(0,0,0,0.75)
+    -webkit-transition: 0.3s
+    -moz-transition: 0.3s
+    -o-transition: 0.3s
+    transition: 0.3s
+    color: white
+    .sbg-icn
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      height: 65px
+      width: 65px
+      color: #C7C7C7
+      font-size: 20px
+      display: flex
+      justify-content: center
+      align-items: center
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+    input
+      position: relative
+      display: block
+      width: 100%
+      height: 100%
+      background: transparent
+      border: none
+      font-family: 'Rubik', sans-serif
+      font-size: 16px
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      color: white
+      &:placeholder-shown
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        color: #C7C7C7
+      &::placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        color: #C7C7C7
+      &:-moz-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        color: #C7C7C7
+      &:-ms-input-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        color: #C7C7C7
+      &::-moz-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        color: #C7C7C7
+      &::-ms-input-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        color: #C7C7C7
+      &::-webkit-input-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        color: #C7C7C7
+    &:hover
+      .sbg-icn
+        color: #03A9F4
+      input
+        &:placeholder-shown
+          color: #03A9F4
+        &::placeholder
+          color: #03A9F4
+        &:-moz-placeholder
+          color: #03A9F4
+        &:-ms-input-placeholder
+          color: #03A9F4
+        &::-moz-placeholder
+          color: #03A9F4
+        &::-ms-input-placeholder
+          color: #03A9F4
+        &::-webkit-input-placeholder
+          color: #03A9F4
+    &.searched
+      border-radius: 10px 10px 0 0
+      .sbg-icn
+        color: #03A9F4
+  #searchRes
+    border-top: 2px solid transparent
+    height: 0
+    width: 100%
+    border-radius: 0 0 10px 10px
+    background: #181818
+    max-width: 1100px
+    -webkit-transition: 0.3s
+    -moz-transition: 0.3s
+    -o-transition: 0.3s
+    transition: 0.3s
+    margin-top: -10px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    position: relative
+    overflow: hidden
+    max-height: 300px
+    display: block
+    .searchResult
+      width: 100%
+      padding: 10px 20px 10px 65px
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      height: 65px
+      font-size: 16px
+      cursor: pointer
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      color: white
+      text-decoration: none
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      display: flex
+      flex-direction: column
+      justify-content: center
+      flex-wrap: nowrap
+      overflow: hidden
+      position: relative
+      img
+        height: 45px
+        display: block
+        position: absolute
+        left: 20px
+        border-radius: 4px
+      .subTitle
+        color: #848484
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        font-size: 15px
+      &:hover
+        background: #03A9F4
+        color: white
+        .subTitle
+          color: white
+    &.searched
+      margin-top: 0
+      overflow-y: auto
+      border-top-color: #282828
+  &.act
+    opacity: 1
+    pointer-events: auto
+.body-background
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: red
+  width: 100%
+  height: 100%
+  background: url("../images/lgbg.jpg") center/cover no-repeat
+.body-background-overlay
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: red
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.8)
+.new-login
+  position: relative
+  width: 100%
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  flex-wrap: nowrap
+  padding: 80px 30px 30px 30px
+  color: white
+  .nl-title
+    font-size: 26px
+  .nt-panel
+    margin-top: 50px
+    width: 100%
+    max-width: 400px
+    .ntp-errors
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      flex-wrap: wrap
+      margin-bottom: 20px
+    .ntp-header
+      margin-bottom: 10px
+      a
+        color: #9c9c9c
+        text-decoration: none!important
+        margin: 10px
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+        display: inline-block
+        &:first-child
+          margin-left: 0
+        &:hover
+          color: #03A9F4!important
+        &.active
+          cursor: default
+          color: white
+    input
+      width: 100%
+      display: block
+      font-family: 'Rubik', sans-serif
+      background: white
+      border: none
+      border-radius: 4px
+      padding: 15px 15px 15px 25px
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      font-size: 16px
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      margin-bottom: 10px
+      &::placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+      &:placeholder-shown
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+      &::-webkit-input-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+      &::-moz-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+      &:-moz-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+      &::-ms-input-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+      &:-ms-input-placeholder
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        transition: 0.3s
+      &:focus
+        color: #03A9F4
+        &::placeholder
+          color: #03A9F4
+        &:placeholder-shown
+          color: #03A9F4
+        &::-webkit-input-placeholder
+          color: #03A9F4
+        &::-moz-placeholder
+          color: #03A9F4
+        &:-moz-placeholder
+          color: #03A9F4
+        &::-ms-input-placeholder
+          color: #03A9F4
+        &:-ms-input-placeholder
+          color: #03A9F4
+    button
+      width: 100%
+      display: block
+      font-family: 'Rubik', sans-serif
+      background: #03A9F4
+      border: none
+      color: white
+      border-radius: 4px
+      padding: 15px 15px 15px 25px
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      font-size: 16px
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      margin-bottom: 10px
+      cursor: pointer
+      &:hover
+        background: #9c9c9c
+        color: black
+.arrow-up
+  width: 0
+  height: 0
+  border-left: 10px solid transparent
+  border-right: 10px solid transparent
+  border-bottom: 10px solid white
+@media only screen and (max-width: 570px)
+  .anime-page-new .anime-info-new
+    padding: 80px 30px 0 30px
+@media only screen and (max-width: 400px)
+  .anime-page-new .anime-info-new
+    padding: 80px 10px 0 10px
+  .anime-episodes-new
+    padding: 10px 30px
+@media only screen and (max-width: 620px)
+  .watch-data
+    padding: 30px 20px 300px 20px
+    .wdt-buttons
+      justify-content: center
+  .wdt-like-btns
+    position: relative!important
+    right: auto!important
+    top: auto!important
+    width: auto!important
+.p-check
+  margin-bottom: 20px
+  input[type=checkbox]
+    width: auto
+    display: inline-block
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    border: none
+    margin-right: 10px
+  label
+    font-family: "Rubik", sans-serif
+.anime-filters
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  padding: 30px 0 0 0
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 300px
+  flex-direction: column
+  flex-wrap: wrap
+  position: absolute
+  select
+    border: #2B2D30
+    background: #2B2D30
+    color: white
+    font-family: "Rubik", sans-serif
+    padding: 10px 20px
+    border-radius: 5px
+    font-size: 15px
+    margin: 8px
+    width: 250px
+  select[multiple]
+    height: 200px
+.playButton
+  position: absolute
+  right: 45px
+  top: 30px
+  text-decoration: none
+  color: #6f6f6f
+  -webkit-transition: 0.3s
+  -moz-transition: 0.3s
+  -o-transition: 0.3s
+  transition: 0.3s
+  &:hover
+    color: #03a9f4
+.form
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  flex-wrap: wrap
+  input
+    display: block
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    width: 100%
+    border: none
+    padding: 15px 15px 15px 30px
+    font-size: 16px
+    position: relative
+    background: #f8f8fa
+    margin: 10px 0
+    -webkit-transition: 0.3s
+    -moz-transition: 0.3s
+    -o-transition: 0.3s
+    transition: 0.3s
+    &[type=submit]
+      cursor: pointer
+      &:hover
+        background: #03a9f4
+        color: white
+    &::placeholder
+      color: #7d7d7d
+    &:placeholder-shown
+      color: #7d7d7d
+    &::-moz-placeholder
+      color: #7d7d7d
+    &:-moz-placeholder
+      color: #7d7d7d
+    &::-webkit-input-placeholder
+      color: #7d7d7d
+    &::-ms-input-placeholder
+      color: #7d7d7d
+    &:-ms-input-placeholder
+      color: #7d7d7d
+label.checkbox
+  display: inline-flex
+  font-size: 16px
+  margin: 25px 15px 25px 0
+  position: relative
+  overflow: hidden
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  justify-content: flex-start
+  align-items: center
+  flex-direction: row
+  flex-wrap: wrap
+  color: #7d7d7d
+  cursor: pointer
+  input[type=checkbox]
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 0
+    margin: 0
+    opacity: 0
+    position: absolute
+    cursor: pointer
+    &:checked
+      ~ span.check
+        opacity: 1
+        -webkit-transform: rotate(45deg) scale(1)
+        -moz-transform: rotate(45deg) scale(1)
+        -ms-transform: rotate(45deg) scale(1)
+        -o-transform: rotate(45deg) scale(1)
+        transform: rotate(45deg) scale(1)
+      ~ span.box
+        background: #03A9F4
+  span.box
+    width: 24px
+    height: 24px
+    display: block
+    left: 0
+    position: relative
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin-right: 14px
+    background: #f8f8fa
+    +transition(.2s)
+  span.check
+    -webkit-transform: rotate(0deg) scale(0)
+    -moz-transform: rotate(0deg) scale(0)
+    -ms-transform: rotate(0deg) scale(0)
+    -o-transform: rotate(0deg) scale(0)
+    transform: rotate(0deg) scale(0)
+    +transition(.2s)
+    opacity: 0
+    left: 10px
+    top: 5px
+    width: 4px
+    height: 8px
+    border: solid #f8f8fa
+    border-width: 0 2px 2px 0
+    background-color: transparent
+    border-radius: 0
+    position: absolute
+select.sl
+  width: auto
+  outline: none
+  font-family: "Rubik", sans-serif
+  margin: 10px 0
+  padding: 5px 5px 5px 10px
+  font-size: 14px
+  background: white
+  border-color: white
+  color: #606060
+  -webkit-transition: 0.3s
+  -moz-transition: 0.3s
+  -o-transition: 0.3s
+  transition: 0.3s
+  display: block
+  border-radius: 5px
+  &:hover
+    background: #606060
+    color: white
+    border-color: #606060
+.movie-ep-count
+  position: absolute
+  bottom: 10px
+  right: 0
+  text-align: right
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  padding: 5px 15px
+  background: #0F0F0F
+  font-size: 14px
+  color: white
+  border-radius: 5px 0 0 5px
+.pagination
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  flex-direction: row
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  padding: 20px 10px
+  margin-bottom: 60px
+  a
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    background: #151515
+    color: #8e949a
+    padding: 10px 16px
+    margin: 6px
+    font-size: 18px
+    border-radius: 5px
+    cursor: pointer
+    -webkit-transition: 0.3s
+    -moz-transition: 0.3s
+    -o-transition: 0.3s
+    transition: 0.3s
+    text-decoration: none
+    &:hover, &.active
+      background: #0C96F0
+      color: white
+      -webkit-transform: scale(1.1)
+      -moz-transform: scale(1.1)
+      -ms-transform: scale(1.1)
+      -o-transform: scale(1.1)
+      transform: scale(1.1)
+.mv-title
+  color: white
+  font-size: 24px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  padding: 60px 30px 0 30px

@@ -1,0 +1,150 @@
+.b-header
+{
+    color:white;
+    height:600px;
+    width:100%;
+    background: center/cover no-repeat;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    padding:40px 40px 40px 220px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: opacity .3s, padding .3s;
+    -moz-transition: opacity .3s, padding .3s;
+    -o-transition: opacity .3s, padding .3s;
+    transition: opacity .3s, padding .3s;
+}
+.b-header .b-header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+}
+.b-header-tags
+{
+    font-size: 16px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.b-header-name
+{
+    font-size: 62px;
+    position: relative;
+    color: white;
+    text-decoration: none!important;
+}
+.b-header-description
+{	max-width: 530px;
+    font-size: 16px;
+    padding-top: 25px;
+    line-height: 20px;
+    position: relative;
+    max-height: 136px;
+    overflow: hidden;
+}
+.tag-list
+{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    padding: 40px 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.tag-item
+{
+    margin: 6px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    background: #17161B;
+    padding: 10px 35px;
+    border-radius: 20px;
+    position: relative;
+    font-size: 17px;
+    -webkit-transition: .3s;
+    -moz-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    cursor: pointer;
+}
+.tag-item:hover {
+    background: #03a9f4;
+}
+.b-header.inactive {
+    opacity:0;
+    position:absolute;
+    left:0;
+    top:0;
+    -webkit-transition: opacity 0.1ms;
+    -moz-transition: opacity 0.1ms;
+    -o-transition: opacity 0.1ms;
+    transition: opacity 0.1ms;
+    pointer-events: none;
+}
+.b-header-arrow {
+    background: rgba(255,255,255,0.05);
+    width: 80px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.bha-icon {
+    color:rgba(255,255,255,0.5);
+    position: relative;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.b-header-arrow:hover {
+    background: rgba(255,255,255,0.1);
+}
+.b-header-arrow:hover .bha-icon {
+    color:rgba(255,255,255,1);
+}
+@media only screen and (max-width: 940px) {
+    .b-header {
+        padding-left: 105px;
+    }
+}
+@media only screen and (max-width: 830px) {
+    .b-header {
+        padding-right: 105px;
+    }
+}
+@media only screen and (max-width: 625px) {
+    .b-header {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .b-header-name {
+        font-size: 43px;
+    }
+}
