@@ -1,0 +1,12 @@
+#AuthType Basic
+#AuthName "Password Protected Area"
+#AuthUserFile /opt/lampp/htdocs/AnimeMoon/admin/.htpasswd
+#Require valid-user
+
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
