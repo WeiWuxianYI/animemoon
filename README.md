@@ -4,7 +4,7 @@ ONLY FOR ANIME, not made for Movies or TV Shows (altrough you can make your own 
 
 It's quite easy to configure. You have to upload db.sql to your phpmyadmin and configure password in config.php and /admin/apiconfig.php . If you have any question join my discord. https://discord.gg/79fVK2T
 Site may have bugs, not something ground braking but probably some minor things. It's very well secured.
-Please consider. You can also contribute to it. https://patreon.com/fastani
+Please consider. You can also contribute to it. 
 Checkout my new project (https://fastani.net)
 100+ Shows that are working.
 Images: https://imgur.com/a/LLwBl1Q#WPrvYDa
